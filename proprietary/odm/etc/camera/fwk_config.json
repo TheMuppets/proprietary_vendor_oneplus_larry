@@ -34,6 +34,12 @@
             "com.tencent.mm",
             "com.tencent.mobileqq"
         ],
+        "skipSizeListForIts": [
+            3840,2160,
+            2400,1080,
+            1920,1440,
+            4000,1800
+        ],
         "feature_motor_enable": false,
         "feature_aps_enable": true,
         "feature_enable_fwk_timer": false,
@@ -50,6 +56,7 @@
         "feature_rio_enable": true,
         "feature_preempt_enable": true,
         "feedback_disconnected": true,
+        "feature_explorer_enable": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
         ],
@@ -421,7 +428,21 @@
         "maxPreviewHeightForAPI2cameraId1": 720,
         "scan_zoom_value": 1.26,
         "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
-        "DisconnectCameraMask": 1
+        "app_disable_fb_evict": true,
+        "supportExplorerCameraMask": 3,
+        "DisconnectCameraMask": 1,
+        "app_disable_fb_thirdparty_activity": [
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI00",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI01",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI02",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI03",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI04",
+            "com.tencent.mm.plugin.flash.FaceFlashUI",
+            "com.tencent.mm.plugin.flash.action.FaceFlashActionUI"
+        ],
+        "app_disable_fb_activity": [
+            "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
+        ]
     },
     "com.tencent.zebra": {
         "previewSizeForAPI1Width": 1920,
@@ -548,7 +569,17 @@
         "maxPreviewWidthForAPI2cameraId0": 1920,
         "maxPreviewHeightForAPI2cameraId0": 1080,
         "maxPreviewWidthForAPI2cameraId1": 1920,
-        "maxPreviewHeightForAPI2cameraId1": 1080
+        "maxPreviewHeightForAPI2cameraId1": 1080,
+        "app_disable_fb_activity": [
+            "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.HomeActivity",
+            "com.whatsapp.qrcode.contactqr.ContactQrActivity",
+            "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
+            "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
+        ],
+        "app_enable_fb_activity": [
+            ""
+        ]
     },
     "com.instagram.android": {
         "app_enable_rio": true,
@@ -597,7 +628,24 @@
         "maxPreviewHeightForAPI2cameraId1": 720,
         "app_disable_fb_activity": [
             "com.whatsapp.camera.CameraActivity",
-            "com.whatsapp.HomeActivity"
+            "com.whatsapp.camera.ui.CameraActivity",
+            "com.whatsapp.HomeActivity",
+            "com.whatsapp.qrcode.contactqr.ContactQrActivity",
+            "com.whatsapp.qrcode.ui.contactqr.ContactQrActivity",
+            "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
+            "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
+        ],
+        "app_enable_fb_activity": [
+            ""
+        ]
+    },
+    "com.microsoft.teams": {
+        "app_enable_fb_activity": [
+            "com.microsoft.skype.teams.views.activities.PreJoinActivity",
+            "com.microsoft.skype.teams.views.activities.InCallActivity"
+        ],
+        "app_disable_fb_activity": [
+            "com.microsoft.office.lens.lenscommon.ui.LensActivity"
         ]
     },
     "com.spotify.music": {

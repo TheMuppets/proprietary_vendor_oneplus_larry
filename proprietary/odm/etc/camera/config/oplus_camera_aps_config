@@ -2321,5 +2321,12 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.ocs.camera.ipu.meishe.filter.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 ]

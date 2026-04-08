@@ -7815,6 +7815,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libAlgoProcess",
+                "libapsjpeg",
                 "libc++",
                 "libc",
                 "libm",
@@ -7862,6 +7863,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libselinux",
                 "libexif-jpeg-aps",
+                "libextendfile",
                 "libc++",
                 "libc",
                 "libm",
@@ -9051,6 +9053,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libapsexif.so",
             ],
             shared_libs: [
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -9503,7 +9506,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_low_light_hdr_for_neon.so",
             ],
             shared_libs: [
-                "libOpenCL",
                 "libmpbase",
                 "liblog",
                 "libc",
@@ -9769,6 +9771,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libextendfile",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libextendfile.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhta",
     owner: "oneplus",
     strip: {
@@ -9905,6 +9931,36 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libolc_vnd",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libolc_vnd.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.olc2-V1-ndk_platform",
+                "libutils",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -10459,6 +10515,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.olc2-V1-ndk_platform",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.orms@1.0",
     owner: "oneplus",
     strip: {
@@ -10549,6 +10630,7 @@ cc_prebuilt_binary {
                 "vendor.oplus.hardware.osense.client-V1-ndk_platform",
                 "libosenseaidlhalclient",
                 "vendor.oplus.hardware.commondcs-V1-ndk_platform",
+                "libolc_vnd",
                 "libhardware",
                 "libsensorndkbridge",
                 "libc++",

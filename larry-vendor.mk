@@ -1038,12 +1038,14 @@ PRODUCT_PACKAGES += \
     libarcsoft_supernight \
     libavutil \
     libexif-jpeg-aps \
+    libextendfile \
     libhta \
     libhwconfigurationutil \
     libhyperlapse \
     libimgClarityEvaluate \
     libml_util \
     libmpbase \
+    libolc_vnd \
     libop-ai-beauty-body-detection \
     libop-ai-beauty-faceretouch-cn \
     liboplusblur_capture_api \
@@ -1065,6 +1067,7 @@ PRODUCT_PACKAGES += \
     libyuvwrapper \
     vendor.oplus.hardware.cammidasservice-V1-ndk_platform \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
+    vendor.oplus.hardware.olc2-V1-ndk_platform \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
     manifest_oplus_fingerprint.xml \

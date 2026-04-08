@@ -279,7 +279,7 @@
   "VendorTag": "com.oplus.feature.pi.ai.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -1252,7 +1252,7 @@
   "VendorTag": "com.oplus.feature.ai.scene.hint.show.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -1281,6 +1281,27 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.camera.docscan.mode.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.ocs.camera.ipu.filter.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.camera.block_shutter_no_respond_log_upload",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
 }
 ]
 }

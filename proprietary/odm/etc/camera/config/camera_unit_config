@@ -226,7 +226,8 @@
     "com.oplus.sat.ultra.support.imagesizes": "4624X3468X4624X2608X4624X2080X3468X3468",
     "com.oplus.sat.tele.support.imagesizes": "4000X3000X4000X2256X4000X1800X3000X3000",
     "com.oplus.flash.wide.tel.support": "1",
-    "com.oplus.delay.close.camera.for.capture.time":"3500"
+    "com.oplus.delay.close.camera.for.capture.time":"3500",
+    "com.oplus.camera.jni.version": "V002.000.000"
   },
 
   "fastvideo_mode_featureTable": {
